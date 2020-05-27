@@ -22,5 +22,8 @@ class MainActivity : AppCompatActivity() {
         btSearchDogBreeds.setOnClickListener {
             startActivity(Intent(this, SearchDogsBreedsActivity::class.java))
         }
+
+        // -- Close application
+        ivCloseApp.setOnClickListener { finish() }
     }
 }

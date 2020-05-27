@@ -17,4 +17,6 @@
     <string name="title_identify_the_dog">Identify The Dog</string>
     <string name="title_search_dog">Search</string>
     <string name="drop_arrow">drop arrow</string>
+    <string name="close_app">close app</string>
+    <string name="quiz">Quiz</string>
 </resources>

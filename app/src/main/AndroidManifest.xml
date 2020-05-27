@@ -11,10 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".ui.SearchDogsBreedsActivity"/>
-        <activity android:name=".ui.IdentifyDogActivity" />
-        <activity android:name=".ui.IdentifyBreedActivity" />
-        <activity android:name=".ui.MainActivity"
+        <activity
+            android:name=".ui.SearchDogsBreedsActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.IdentifyDogActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.IdentifyBreedActivity"
+            android:parentActivityName=".ui.MainActivity" />
+        <activity
+            android:name=".ui.MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

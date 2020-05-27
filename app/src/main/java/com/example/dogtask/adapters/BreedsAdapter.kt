@@ -34,15 +34,18 @@ class BreedsAdapter(
         holder.bind(breeds[position])
     }
 
+    // -- Update the main data source at once
     fun updateDogList(newList: MutableList<String>) {
         breeds = newList
         notifyDataSetChanged()
     }
 
+    // -- Return the main data source of recycler view
     fun getBreeds(): MutableList<String> {
         return breeds
     }
 
+    // -- Update main list item by item
     fun updateItem(breed: String) {
         breeds.add(breed)
         notifyItemInserted(breeds.lastIndex)

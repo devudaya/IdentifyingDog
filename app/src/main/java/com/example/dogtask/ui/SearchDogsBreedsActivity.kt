@@ -39,6 +39,7 @@ class SearchDogsBreedsActivity : AppCompatActivity() {
             }
         })
         btSearch.setOnClickListener { searchBreeds() }
+        // -- Stop the searching process and reset
         btStop.setOnClickListener {
             job?.cancel()
             typedStr = ""
@@ -52,7 +53,7 @@ class SearchDogsBreedsActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        job?.cancel()
+        job?.cancel() // Cancel the concurrent job if it is exists
     }
 
     // -- Searching breeds
