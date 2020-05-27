@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">DogTask</string>
+    <string name="identify_the_breed">Identify the Breed</string>
+    <string name="identify_the_dog">Identify the Dog</string>
+    <string name="search_dog_breeds">Search Dog Breeds</string>
+    <string name="submit">Submit</string>
+    <string name="dog">Dog</string>
+    <string name="next">Next</string>
+    <string name="correct">CORRECT!</string>
+    <string name="wrong">WRONG!</string>
+    <string name="select_the">Select the :</string>
+    <string name="stop">Stop</string>
+    <string name="search_hint">Type the breed…</string>
+    <string name="search_result">Search result</string>
+    <string name="title_identify_the_breed">Identify The Breed</string>
+    <string name="title_identify_the_dog">Identify The Dog</string>
+    <string name="title_search_dog">Search</string>
+    <string name="drop_arrow">drop arrow</string>
+</resources>
