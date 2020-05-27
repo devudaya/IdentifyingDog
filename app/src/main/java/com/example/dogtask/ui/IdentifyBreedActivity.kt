@@ -14,9 +14,10 @@ import kotlinx.android.synthetic.main.activity_identify_breed.*
 
 class IdentifyBreedActivity : AppCompatActivity() {
 
-    // vars
+    // vars and vals
     private lateinit var randomBreedName: String
     private lateinit var selectedBreed: String
+    private var isSubmitted: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,23 +25,26 @@ class IdentifyBreedActivity : AppCompatActivity() {
         title = getString(R.string.title_identify_the_breed)
         setBreedsToSpinner()
         setRandomBreed()
-        btNext.setOnClickListener {
-            setRandomBreed()
-            btSubmit.visibility = View.VISIBLE
-            btNext.visibility = View.GONE
-        }
         btSubmit.setOnClickListener { checkTheBreedAndNext() }
     }
 
     private fun checkTheBreedAndNext() {
 
-        btSubmit.visibility = View.GONE
-        btNext.visibility = View.VISIBLE
-        if (randomBreedName == selectedBreed) {
-            Utils.showDialog(this)
+        if (isSubmitted) {
+
+            setRandomBreed()
+            btSubmit.text = getString(R.string.submit)
         } else {
-            Utils.showDialog(this, randomBreedName)
+
+            if (randomBreedName == selectedBreed) {
+                Utils.showDialog(this)
+            } else {
+                Utils.showDialog(this, randomBreedName)
+            }
+            btSubmit.text = getString(R.string.next)
         }
+        isSubmitted = !isSubmitted
+
     }
 
     // -- Set random breed

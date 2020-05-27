@@ -14,7 +14,7 @@ import kotlin.collections.ArrayList
 
 class IdentifyDogActivity : AppCompatActivity() {
 
-    // Vars
+    // vars and vals
     private val dogList = mutableListOf<String>()
     private var breedsAdapter: BreedsAdapter? = null
 

@@ -47,18 +47,6 @@
         app:layout_constraintTop_toBottomOf="@+id/spBreeds"
         app:layout_constraintVertical_bias="0.13999999" />
 
-    <Button
-        android:id="@+id/btNext"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/next"
-        android:visibility="gone"
-        android:background="@drawable/bt_background"
-        app:layout_constraintEnd_toEndOf="@+id/spBreeds"
-        app:layout_constraintStart_toStartOf="@+id/spBreeds"
-        app:layout_constraintTop_toBottomOf="@+id/spBreeds" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"

@@ -19,7 +19,7 @@ import kotlin.collections.ArrayList
 
 class SearchDogsBreedsActivity : AppCompatActivity() {
 
-    // Vars
+    // vars and vals
     private var typedStr: String? = null
     private var breedsAdapter: BreedsAdapter? = null
     private var job: CompletableJob? = null
