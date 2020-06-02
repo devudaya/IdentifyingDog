@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // -- Navigate each activities
+        // -- Test
         btIdentifyTheBreed.setOnClickListener {
             startActivity(Intent(this, IdentifyBreedActivity::class.java))
         }
